@@ -4,13 +4,7 @@ var secret_button=false;
 var idk_what_to_name_this_lol;
 var secret_secret_button=false;
 var secret_secret_secret_button=false;
-const Http = new XMLHttpRequest();
 
-Http.open("GET","https://api.ipify.org/");
-Http.send();
-Http.onreadystatechange = (e) => {
-  idk_what_to_name_this_lol = (Http.responseText);
-}
 
 function buttonClick(type) {
 switch (type) {
