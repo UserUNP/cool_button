@@ -1,0 +1,56 @@
+@keyframes hiddenbutton {
+  0% {
+	transform: scale(1.5,0) translateX(0px);
+	font-style: lighter;
+  }
+  100% {
+	transform: scale(1) translateX(50px);
+	font-style: bolder;
+  }
+}
+
+@keyframes hiddenbutton2 {
+  0% {
+	transform: scale(1.5,0) translateX(0px);
+	font-style: lighter;
+  }
+  100% {
+	transform: scale(0.7) translateX(60px);
+	font-style: bolder;
+  }
+}
+@keyframes hiddenbutton3 {
+  0% {
+	transform: scale(1.5,0) translateX(0px);
+	font-style: lighter;
+  }
+  100% {
+	transform: scale(0.5) translateX(50px);
+	font-style: bolder;
+  }
+}
+
+#hiddenbutton {
+	animation: hiddenbutton 0.3s ease-out;
+	transform: translateX(50px);
+	font-style: bolder;
+}
+
+#hiddenbutton2 {
+	animation: hiddenbutton2 0.3s ease-out;
+	transform: translateX(43px) scale(0.7);
+	font-style: bolder;
+}
+#hiddenbutton3 {
+	animation: hiddenbutton3 0.3s ease-out;
+	transform: translateX(20px) scale(0.5);
+	font-style: bolder;
+}
+
+.button {
+	transition: all 0.2s;
+	transform: scale(1.3);
+}
+button:hover {
+	transform: scale(1.5);
+}
